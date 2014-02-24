@@ -15,8 +15,8 @@ Modules:
 ---------------------------------------------------------------------------------------
 
 The purpose of this script is to run a series of queries stored in a database (a PostgreSQL in this case), where each query is supposed to run on a specific day.
-Each query from the group of queries is runned by a different thread, all of them belonging to an asynchronous and limited thread pool.
+Each query from the group of queries is ran by a different thread, all of them belonging to an asynchronous and limited thread pool.
 Operations information is logged to a file, as well as the tasks database is also uptaded with the information of the queries result.
 This script is intended to run associated to a cron table.
 
-Some details are still uncomplete, and some pieces of code may be a bit rough.
+Some details are still incomplete, and some pieces of code may be a bit rough.
