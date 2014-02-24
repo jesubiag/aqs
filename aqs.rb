@@ -58,7 +58,7 @@ class Qadm
 
 	def iniConn
 
-		@entry = Pgpass.match (database: @query["bd"] )
+		@entry = Pgpass.match( database: @query["bd"] )
 		@conn = PGconn.new( :dbname => @query["bd"], :user => @entry.username, :password => @entry.password )	#Check if connection was properly established
 		@mentry = Pgpass.match( database: 'organizador' )
 		@mconn = PGconn.new( :dbname => 'organizador', :user => @mentry.username, :password => @mentry.password )
@@ -119,7 +119,7 @@ class Logger
 	def initialize
 
 		@path="/tmp/hilos.log"
-		@file = File.open (@path,"a+" )
+		@file = File.open( @path, "a+" )
 
 	end
 	
